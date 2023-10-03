@@ -157,7 +157,7 @@ export default function MovieDetail() {
       {showRate && <Rate onShow={() => setShowRate(false)} movieId={movieDetail.id} />}
       {(showPopup || showRate) && (
         <div
-          className="fixed top-0 left-0 z-20 h-screen w-full bg-blackOver group-hover:block"
+          className="fixed left-0 top-0 z-20 h-screen w-full bg-blackOver group-hover:block"
           onClick={() => {
             setShowRate(false)
             setShowPopup(false)
@@ -220,7 +220,7 @@ export default function MovieDetail() {
                           width="200px"
                           height="300px"
                         />
-                        <div className="absolute top-0 left-6">
+                        <div className="absolute left-6 top-0">
                           <SvgAdd width="36" height="50" />
                         </div>
                       </div>
@@ -292,7 +292,7 @@ export default function MovieDetail() {
             </div>
             <div className="sm:basis-4/12 sm:px-4">
               <p
-                className={clsx(' bg-gray2 py-2 px-6 font-medium hover:bg-white4', {
+                className={clsx(' bg-gray2 px-6 py-2 font-medium hover:bg-white4', {
                   ['cursor-pointer']: !addWatchList,
                 })}
                 onClick={() => handleAddWatchList()}
@@ -309,7 +309,7 @@ export default function MovieDetail() {
                 <span className="ml-2">{t('movieDetail:addWatch')}</span>
               </p>
               <p
-                className={clsx(' bg-gray2 py-2 px-6 font-medium hover:bg-white4', {
+                className={clsx(' bg-gray2 px-6 py-2 font-medium hover:bg-white4', {
                   ['cursor-pointer']: !addWatchList,
                 })}
                 onClick={() => handleAddFavoriteList()}
@@ -351,7 +351,7 @@ export default function MovieDetail() {
                     <div className="basis-2/12">
                       <div className="group relative h-[80px] w-[80px] overflow-hidden rounded-full sm:h-[200px] sm:w-[200px]">
                         <Link href={`/person/${cast.id}`}>
-                          <div className="absolute top-0 left-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
+                          <div className="absolute left-0 top-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
                         </Link>
                         <Image
                           src={apiConfig.originalImage(cast.profile_path)}

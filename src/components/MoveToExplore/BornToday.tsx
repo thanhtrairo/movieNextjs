@@ -41,14 +41,14 @@ export const BornToday: React.FC<{ personPopular: PersonType[] }> = ({ personPop
       <TitleCategories title={`${PeopleBornOn} ${moment().format('MMM Do YY')}`}>
         {t('header:BornToday')}
       </TitleCategories>
-      <div className="mt-4 mb-16">
+      <div className="mb-16 mt-4">
         <Slider {...settings}>
           {personPopular.map((person: PersonType) => (
             <LazyLoad key={person.id} offset={[-100, 100]} placeholder={<Loading height={300} />}>
               <div className="group">
                 <div className="relative mx-auto h-[180px] w-[180px] cursor-pointer overflow-hidden rounded-full lg:h-[140px] lg:w-[140px]">
                   <Link href={`/person/${person.id}`}>
-                    <div className="absolute top-0 left-0 z-20 hidden h-full w-full bg-blackOver group-hover:block"></div>
+                    <div className="absolute left-0 top-0 z-20 hidden h-full w-full bg-blackOver group-hover:block"></div>
                   </Link>
                   <LazyLoad once={true} placeholder={<div className="h-[180px] w-[180px] bg-gray"></div>}>
                     <Image

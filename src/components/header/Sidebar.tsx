@@ -22,8 +22,8 @@ export const Sidebar: React.FC<{ onShow: Function }> = ({ onShow }) => {
         {account.session_id ? (
           <li className="group relative mr-1">
             {t('header:HiYou')}
-            <div className="absolute top-0 right-0 z-20 hidden group-hover:block">
-              <div className="absolute top-[110%] left-0 bg-black1 ">
+            <div className="absolute right-0 top-0 z-20 hidden group-hover:block">
+              <div className="absolute left-0 top-[110%] bg-black1 ">
                 <Link href="/profile">
                   <div className="px-6 py-2 hover:bg-gray2">{t('header:MyProfile')}</div>
                 </Link>

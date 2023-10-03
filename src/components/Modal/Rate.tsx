@@ -80,15 +80,15 @@ export const Rate: React.FC<{
   }, [rateSuccess])
   return (
     <>
-      <div className="fixed top-[40%] left-[50%] z-50 translate-y-[-50%] translate-x-[-50%] text-white">
-        <div className="relative bg-gray px-16 pt-12 pb-8">
+      <div className="fixed left-[50%] top-[40%] z-50 translate-x-[-50%] translate-y-[-50%] text-white">
+        <div className="relative bg-gray px-16 pb-8 pt-12">
           <span
-            className="absolute top-[-10%] right-0 h-8 w-8 cursor-pointer rounded-full text-center leading-8 hover:bg-white4"
+            className="absolute right-0 top-[-10%] h-8 w-8 cursor-pointer rounded-full text-center leading-8 hover:bg-white4"
             onClick={() => onShow()}
           >
             x
           </span>
-          <div className="absolute top-[-20%] left-[42%]">
+          <div className="absolute left-[42%] top-[-20%]">
             <div className="relative">
               <div className="absolute left-[42%] top-[36%] text-black">{currentStar > 0 ? currentStar : '?'}</div>
               <FaStar className="text-[72px] text-blue1" />

@@ -42,7 +42,7 @@ const PersonDetail = () => {
       <div className="bg-white5">
         <div className="mx-auto sm:container ">
           <div className="bg-white px-8 py-20">
-            <div className="border-[1px] border-solid border-gray5 py-4 px-4 sm:px-0">
+            <div className="border-[1px] border-solid border-gray5 px-4 py-4 sm:px-0">
               <p className="text-36">{personDetail.name}</p>
               <div className="flex flex-wrap">
                 <div className="basis-6/12 sm:basis-4/12">
@@ -79,7 +79,7 @@ const PersonDetail = () => {
                     <div className="">
                       <div className="group relative h-[260px] w-full overflow-hidden sm:h-[300px]">
                         <Link href={`/movie/${movie.id}`}>
-                          <div className="absolute top-0 left-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
+                          <div className="absolute left-0 top-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
                         </Link>
                         <LazyLoad once={true}>
                           <Image
@@ -90,7 +90,7 @@ const PersonDetail = () => {
                             height="360px"
                           />
                         </LazyLoad>
-                        <div className="absolute top-0 left-0">
+                        <div className="absolute left-0 top-0">
                           <SvgAdd width="36" height="50" />
                         </div>
                       </div>

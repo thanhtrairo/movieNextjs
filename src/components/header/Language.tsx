@@ -19,7 +19,7 @@ export default function Language({ onSetLanguage }: { onSetLanguage: Function })
   }, [])
 
   return (
-    <div className="absolute top-[110%] left-0 z-20 bg-black1">
+    <div className="absolute left-0 top-[110%] z-20 bg-black1">
       <div className="flex cursor-pointer p-1 hover:bg-gray2 sm:p-3" onClick={(e) => handleLanguage('EN', e)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

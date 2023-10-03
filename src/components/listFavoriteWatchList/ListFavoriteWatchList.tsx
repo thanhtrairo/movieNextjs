@@ -119,7 +119,7 @@ const ListFavoriteWatchList: React.FC<{
         <>
           <Rate onShow={() => setShowRate(false)} movieId={movieId} />
           <div
-            className="fixed top-0 left-0 z-20 h-screen w-full bg-blackOver group-hover:block"
+            className="fixed left-0 top-0 z-20 h-screen w-full bg-blackOver group-hover:block"
             onClick={() => setShowRate(false)}
           ></div>
         </>
@@ -129,7 +129,7 @@ const ListFavoriteWatchList: React.FC<{
           <div className="mb-4 flex py-4 shadow-lg" key={movie.id}>
             <div className="group relative basis-4/12 sm:basis-2/12">
               <Link href={`/movie/${movie.id}`}>
-                <div className="absolute top-0 left-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
+                <div className="absolute left-0 top-0 z-20 hidden h-full w-full cursor-pointer bg-blackOver group-hover:block"></div>
               </Link>
               <Image
                 src={apiConfig.originalImage(movie.poster_path)}

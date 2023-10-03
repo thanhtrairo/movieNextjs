@@ -43,7 +43,7 @@ const Carousel: React.FC<{ movieTrending: MovieType[] }> = ({ movieTrending }) =
         <>
           <Popup onShow={() => setShowPopup(false)} videoId={videoId} />
           <div
-            className="fixed top-0 left-0 z-20 h-screen w-full bg-blackOver group-hover:block"
+            className="fixed left-0 top-0 z-20 h-screen w-full bg-blackOver group-hover:block"
             onClick={() => setShowPopup(false)}
           ></div>
         </>
@@ -70,7 +70,7 @@ const Carousel: React.FC<{ movieTrending: MovieType[] }> = ({ movieTrending }) =
                         width="200px"
                         height="300px"
                       />
-                      <div className="absolute top-0 left-6">
+                      <div className="absolute left-6 top-0">
                         <SvgAdd width="36" height="50" />
                       </div>
                     </div>
@@ -92,7 +92,7 @@ const Carousel: React.FC<{ movieTrending: MovieType[] }> = ({ movieTrending }) =
             ))}
           </Slider>
         </div>
-        <div className="absolute top-0 right-[-1%] hidden sm:block sm:w-4/12">
+        <div className="absolute right-[-1%] top-0 hidden sm:block sm:w-4/12">
           <h2 className="text-yellow-400">{t(`header:UpNext`)}</h2>
           <div className="py-6">
             <div className="flex flex-col gap-3">

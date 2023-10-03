@@ -7,7 +7,7 @@ export const Keyword: React.FC<{ keyword: KeyType; onSearch: Function }> = ({ ke
     <div className="group mx-2 my-6 hover:cursor-pointer" onClick={() => onSearch()}>
       <div className="flex gap-4">
         <div className=" relative basis-2/12 ">
-          <div className="absolute top-0 left-0 hidden h-full w-full bg-blackOver group-hover:block"></div>
+          <div className="absolute left-0 top-0 hidden h-full w-full bg-blackOver group-hover:block"></div>
           <Image
             src="https://lamvt.vn/wp-content/uploads/2017/11/Identify-Keywords.jpg"
             alt="logo"

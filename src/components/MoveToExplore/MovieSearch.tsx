@@ -11,7 +11,7 @@ export const MovieSearch: React.FC<{ movie: MovieType; onSearch: Function }> = (
       <div className="flex gap-4">
         <div className="relative basis-2/12" onClick={() => onSearch()}>
           <Link href={`/movie/${movie.id}`}>
-            <div className="absolute top-0 left-0 z-50 hidden h-full w-full bg-blackOver group-hover:block"></div>
+            <div className="absolute left-0 top-0 z-50 hidden h-full w-full bg-blackOver group-hover:block"></div>
           </Link>
           <Image src={apiConfig.originalImage(movie.poster_path)} alt={movie.title} width={160} height={200} />
         </div>

@@ -17,7 +17,7 @@ export const TopNext = () => {
   return (
     <>
       <TitleCategories title="">{t('header:TopNews')}</TitleCategories>
-      <div className="mt-4 mb-16">
+      <div className="mb-16 mt-4">
         <Slider {...settings}>
           {/* <MovieSearch />
           <MovieSearch />
@@ -26,16 +26,16 @@ export const TopNext = () => {
         </Slider>
         <div className="flex space-x-2">
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white py-1 px-3 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white py-1 px-3 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white py-1 px-3 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white py-1 px-3 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
           </Link>
         </div>
       </div>

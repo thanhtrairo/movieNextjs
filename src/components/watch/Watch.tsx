@@ -40,7 +40,7 @@ export const Watch: React.FC<{ moviePopular: MovieType[]; watchList: MovieType[]
       {modalShow.video.showVideo && <Popup onShow={() => handleShow()} videoId={modalShow.video.videoId} />}
       {(modalShow.rate.showRate || modalShow.video.showVideo) && (
         <div
-          className="fixed top-0 left-0 z-20 h-screen w-full bg-blackOver group-hover:block"
+          className="fixed left-0 top-0 z-20 h-screen w-full bg-blackOver group-hover:block"
           onClick={() => handleShow()}
         ></div>
       )}

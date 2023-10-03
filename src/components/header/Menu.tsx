@@ -4,7 +4,7 @@ import { FaWindowClose } from 'react-icons/fa'
 
 export default function Menu() {
   return (
-    <div className="absolute top-0 left-0 z-[60] h-full w-full bg-gray py-8">
+    <div className="absolute left-0 top-0 z-[60] h-full w-full bg-gray py-8">
       <div className="mx-auto w-[50%]">
         <div className="flex justify-between">
           <Image src="/img/logo2.svg" alt="logo2" className="w-auto" width={80} height={40} />

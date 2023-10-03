@@ -48,7 +48,7 @@ export const Video = ({
     <>
       <Title>{title}</Title>
       {!features && <TitleCategories title={titleCategoriesPlaceholder}>{titleCategories}</TitleCategories>}
-      <div className={clsx('mt-6 mb-16', { ['sm:w-8/12']: features })}>
+      <div className={clsx('mb-16 mt-6', { ['sm:w-8/12']: features })}>
         <Slider {...settings}>
           {[1, 2, 3, 4].map((item: any) => (
             <LazyLoad key={item} offset={[-100, 100]} placeholder={<Loading height={500} />}>

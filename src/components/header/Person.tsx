@@ -10,7 +10,7 @@ export const Person: React.FC<{ person: PersonType; onSearch: Function }> = ({ p
       <div className="flex gap-4">
         <div className=" relative basis-2/12" onClick={() => onSearch()}>
           <Link href={`/person/${person.id}`}>
-            <div className="absolute top-0 left-0 z-50 hidden h-full w-full bg-blackOver group-hover:block"></div>
+            <div className="absolute left-0 top-0 z-50 hidden h-full w-full bg-blackOver group-hover:block"></div>
           </Link>
           <Image src={apiConfig.originalImage(person.profile_path)} alt={person.name} width={100} height={140} />
         </div>

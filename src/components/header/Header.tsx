@@ -82,7 +82,7 @@ const Header = () => {
   return (
     <>
       {(showMenu || showAll || showEN || showProfile || search) && (
-        <div className="fixed top-0 left-0 z-20 h-screen w-full" onClick={() => handleShow()}></div>
+        <div className="fixed left-0 top-0 z-20 h-screen w-full" onClick={() => handleShow()}></div>
       )}
       <div className=" border-[1px] border-black1 bg-black1 text-14 text-white">
         <div className="mx-auto flex flex-row  items-center sm:container sm:space-x-2">
@@ -104,7 +104,7 @@ const Header = () => {
           <div className="w-[80%] sm:w-[55%]">
             <form className="relative z-50 ml-2 flex w-full items-center rounded-md bg-white">
               {search && dataSearch && (
-                <div className="absolute top-[100%] left-0 min-w-full bg-black1 py-4">
+                <div className="absolute left-0 top-[100%] min-w-full bg-black1 py-4">
                   {dataSearch.length === 0 && (
                     <div className="min-w-full py-16 text-center text-red-600">Not results found</div>
                   )}
@@ -153,7 +153,7 @@ const Header = () => {
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
-                <div className="absolute top-0 right-[2%] flex h-full items-center text-slate-600">
+                <div className="absolute right-[2%] top-0 flex h-full items-center text-slate-600">
                   <FaSearch />
                 </div>
               </div>
@@ -213,7 +213,7 @@ const Header = () => {
                   </span>
                 </p>
                 {showProfile && (
-                  <div className="absolute top-full left-0 z-20 min-w-[100px] bg-black1 shadow-lg">
+                  <div className="absolute left-0 top-full z-20 min-w-[100px] bg-black1 shadow-lg">
                     <Link href={`/profile`}>
                       <p className="cursor-pointer whitespace-nowrap p-3 hover:bg-gray2">{t('header:MyProfile')}</p>
                     </Link>

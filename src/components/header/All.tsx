@@ -17,7 +17,7 @@ const All: React.FC<{ onChangeTypeSearch: Function; typeSearch: string }> = ({ o
     setActive(typeSearch)
   }, [])
   return (
-    <div className="All absolute top-[110%] left-0 z-20 min-w-[200px] cursor-pointer whitespace-pre bg-black1 text-white">
+    <div className="All absolute left-0 top-[110%] z-20 min-w-[200px] cursor-pointer whitespace-pre bg-black1 text-white">
       <li
         className={clsx('group', { ['activeAll ']: active === 'multi' })}
         onClick={(e) => handleSetTypeSearch(e, 'multi')}

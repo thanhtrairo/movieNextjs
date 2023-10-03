@@ -11,7 +11,7 @@ export const ExportsMovie = () => {
     <>
       <Title>{t('header:ExploreMoviesTVShows')}</Title>
       <TitleCategories title={t('header:Weekend')}>{t('header:TopBoxOffice')}</TitleCategories>
-      <div className="mt-6 mb-16 grid gap-x-16 gap-y-6 sm:grid-cols-2">
+      <div className="mb-16 mt-6 grid gap-x-16 gap-y-6 sm:grid-cols-2">
         <BuyMovie num price />
         <BuyMovie num price />
         <BuyMovie num price />

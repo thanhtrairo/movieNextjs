@@ -34,13 +34,13 @@ export const SvgAdd: React.FC<{ width: string; height: string; addWatchList?: bo
         ></polygon>
       </svg>
       {addWatchList ? (
-        <FaCheck className="absolute top-[16%] left-[26%] text-14 text-black" />
+        <FaCheck className="absolute left-[26%] top-[16%] text-14 text-black" />
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
-          className="ipc-icon ipc-icon--add ipc-icon--inline absolute top-[16%] left-[16%]"
+          className="ipc-icon ipc-icon--add ipc-icon--inline absolute left-[16%] top-[16%]"
           viewBox="0 0 24 24"
           fill="currentColor"
           role="presentation"

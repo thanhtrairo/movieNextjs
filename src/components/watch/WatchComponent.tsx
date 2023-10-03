@@ -95,7 +95,7 @@ export const WatchComponent: React.FC<{ movie: MovieType; ratingList: MovieType[
       <div className="mx-3 bg-gray4">
         <div className="group relative cursor-pointer">
           <Link href={`/movie/${movie.id}`} passHref>
-            <div className="absolute top-0 left-0 z-20 hidden h-full w-full bg-blackOver group-hover:block"></div>
+            <div className="absolute left-0 top-0 z-20 hidden h-full w-full bg-blackOver group-hover:block"></div>
           </Link>
           <LazyLoad once={true} placeholder={<div className="h-[300px] bg-gray2"></div>}>
             <Image
@@ -107,7 +107,7 @@ export const WatchComponent: React.FC<{ movie: MovieType; ratingList: MovieType[
             />
           </LazyLoad>
 
-          <div className="absolute top-0 left-0">
+          <div className="absolute left-0 top-0">
             <SvgAdd width="30" height="36" addWatchList={addWatchList} />
           </div>
         </div>
