@@ -110,7 +110,7 @@ export default Profile
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(String(locale), ['common', 'header', 'movieDetail'])),
+      ...(await serverSideTranslations(String(locale), ['common', 'movieDetail'])),
     },
   }
 }

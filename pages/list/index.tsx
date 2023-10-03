@@ -172,7 +172,7 @@ const List = () => {
       <main className="overflow-hidden bg-gray3 text-[80%] text-white sm:text-[100%]">
         <div className="mx-auto px-2 sm:container sm:px-0">
           <div className="mt-8">
-            <Title>{t('header:WhatToWatch')}</Title>
+            <Title>{t('common:WhatToWatch')}</Title>
           </div>
           <nav className="flex flex-wrap gap-y-4">
             {TITLES.map((title) => (
@@ -186,7 +186,7 @@ const List = () => {
                 )}
                 onClick={() => setActive(title)}
               >
-                {t(`header:${changeTitle(title)}`).toLocaleUpperCase()}
+                {t(`common:${changeTitle(title)}`).toLocaleUpperCase()}
               </div>
             ))}
           </nav>
@@ -225,7 +225,7 @@ export default List
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(String(locale), ['common', 'header'])),
+      ...(await serverSideTranslations(String(locale), ['common'])),
     },
   }
 }

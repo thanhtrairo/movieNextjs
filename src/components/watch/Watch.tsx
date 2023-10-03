@@ -45,17 +45,17 @@ export const Watch: React.FC<{ moviePopular: MovieType[]; watchList: MovieType[]
         ></div>
       )}
       <div className="flex flex-row items-center justify-between">
-        <Title>{t('header:WhatToWatch')}</Title>
+        <Title>{t('common:WhatToWatch')}</Title>
         <h2 className="text hidden cursor-pointer flex-row items-center space-x-2 text-blue1 sm:flex">
-          {t('header:GetMoreRecommendations')} <FaAngleRight />
+          {t('common:GetMoreRecommendations')} <FaAngleRight />
         </h2>
       </div>
       <div>
         <WatchList watchList={watchList} ratingList={ratingList} />
         <WatchListComponent
           movieList={moviePopular}
-          titleCategories={t('header:FanFavorites')}
-          titleCategoriesPlaceholder={t('header:ThisWeekTopTVAndMovies')}
+          titleCategories={t('common:FanFavorites')}
+          titleCategoriesPlaceholder={t('common:ThisWeekTopTVAndMovies')}
           watchList={watchList}
           ratingList={ratingList}
           slider

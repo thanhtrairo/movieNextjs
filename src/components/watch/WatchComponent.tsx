@@ -141,13 +141,13 @@ export const WatchComponent: React.FC<{ movie: MovieType; ratingList: MovieType[
                   '+'
                 )}
               </span>
-              <span className="">{t('header:AddWatchList')}</span>
+              <span className="">{t('common:AddWatchList')}</span>
             </div>
           </div>
           <div onClick={() => handleShowVideo(movie.id)}>
             <a className="group flex cursor-pointer flex-row items-center justify-center space-x-2 py-1 hover:bg-white2">
               <FaPlay className="opacity-70 group-hover:opacity-100" />
-              <span className="">{t('header:Trailer')}</span>
+              <span className="">{t('common:Trailer')}</span>
             </a>
           </div>
         </div>

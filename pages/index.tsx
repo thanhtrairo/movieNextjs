@@ -49,23 +49,23 @@ const Home = ({ moviePopular, movieTrending, personPopular, movieStreaming }: Pr
           <div className="mx-auto sm:container">
             <Carousel movieTrending={movieTrending} />
             <div className=" mb-20">
-              <Video title={t('header:FeaturedToday')} titleMovie="List" list name slidesShow={2} features />
+              <Video title={t('common:FeaturedToday')} titleMovie="List" list name slidesShow={2} features />
             </div>
             <Watch moviePopular={moviePopular} watchList={watchList?.results} ratingList={ratingList?.results} />
             <MoveToWatch />
             <Video
-              title={t('header:FeaturedToday')}
-              titleCategories={t('header:IMDbOriginals')}
-              titleCategoriesPlaceholder={t('header:CelebrityInterviewsTrendingEntertainmentStoriesAndExpertAnalysis')}
+              title={t('common:FeaturedToday')}
+              titleCategories={t('common:IMDbOriginals')}
+              titleCategoriesPlaceholder={t('common:CelebrityInterviewsTrendingEntertainmentStoriesAndExpertAnalysis')}
               titleMovie="3:45"
               name
               slidesShow={3}
             />
             <WatchListComponent
               movieList={movieStreaming}
-              title={t('header:ExploreWhat’sStreaming')}
-              titleCategories={t('header:PrimeVIDEO')}
-              titleCategoriesPlaceholder={t('header:includedWithPrime')}
+              title={t('common:ExploreWhat’sStreaming')}
+              titleCategories={t('common:PrimeVIDEO')}
+              titleCategoriesPlaceholder={t('common:includedWithPrime')}
               slider
               watchList={watchList?.results}
               ratingList={ratingList?.results}
@@ -94,7 +94,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         movieTrending: result[1].data.results,
         movieStreaming: result[2].data.results,
         personPopular: result[3].data.results,
-        ...(await serverSideTranslations(String(locale), ['common', 'header'])),
+        ...(await serverSideTranslations(String(locale), ['common'])),
       },
     }
   } catch (e) {

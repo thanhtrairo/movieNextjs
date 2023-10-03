@@ -17,25 +17,25 @@ export const Sidebar: React.FC<{ onShow: Function }> = ({ onShow }) => {
       <div className="relative">
         <FaRegWindowClose onClick={() => onShow()} className="absolute right-0 top-[-20%] text-20 hover:text-red-600" />
         <Link href="/">
-          <li>{t('header:Home')}</li>
+          <li>{t('common:Home')}</li>
         </Link>
         {account.session_id ? (
           <li className="group relative mr-1">
-            {t('header:HiYou')}
+            {t('common:HiYou')}
             <div className="absolute right-0 top-0 z-20 hidden group-hover:block">
               <div className="absolute left-0 top-[110%] bg-black1 ">
                 <Link href="/profile">
-                  <div className="px-6 py-2 hover:bg-gray2">{t('header:MyProfile')}</div>
+                  <div className="px-6 py-2 hover:bg-gray2">{t('common:MyProfile')}</div>
                 </Link>
                 <div className="px-6 py-2 hover:bg-gray2" onClick={() => localStorage.removeItem('account')}>
-                  {t('header:Logout')}
+                  {t('common:Logout')}
                 </div>
               </div>
             </div>
           </li>
         ) : (
           <Link href="/login">
-            <li>{t('header:SignIn')}</li>
+            <li>{t('common:SignIn')}</li>
           </Link>
         )}
 

@@ -16,7 +16,7 @@ export const TopNext = () => {
   const { t } = useTranslation()
   return (
     <>
-      <TitleCategories title="">{t('header:TopNews')}</TitleCategories>
+      <TitleCategories title="">{t('common:TopNews')}</TitleCategories>
       <div className="mb-16 mt-4">
         <Slider {...settings}>
           {/* <MovieSearch />
@@ -26,16 +26,16 @@ export const TopNext = () => {
         </Slider>
         <div className="flex space-x-2">
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('common:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('common:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('common:TopNews')}</a>
           </Link>
           <Link href="/" passHref>
-            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('header:TopNews')}</a>
+            <a className="rounded-2xl border-[1px] border-white px-3 py-1 text-14">{t('common:TopNews')}</a>
           </Link>
         </div>
       </div>

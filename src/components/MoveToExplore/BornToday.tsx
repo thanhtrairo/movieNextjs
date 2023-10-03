@@ -35,11 +35,11 @@ export const BornToday: React.FC<{ personPopular: PersonType[] }> = ({ personPop
     ],
   }
   const { t } = useTranslation()
-  const PeopleBornOn = t(`header:PeopleBornOn`)
+  const PeopleBornOn = t(`common:PeopleBornOn`)
   return (
     <>
       <TitleCategories title={`${PeopleBornOn} ${moment().format('MMM Do YY')}`}>
-        {t('header:BornToday')}
+        {t('common:BornToday')}
       </TitleCategories>
       <div className="mb-16 mt-4">
         <Slider {...settings}>

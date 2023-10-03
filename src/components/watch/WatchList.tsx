@@ -19,7 +19,7 @@ export const WatchList = ({ watchList, ratingList }: { watchList: MovieType[]; r
         watchList?.length > 6 ? (
           <WatchListComponent
             movieList={watchList}
-            titleCategories={t('header:FromYourWatchList')}
+            titleCategories={t('common:FromYourWatchList')}
             watchList={watchList}
             ratingList={ratingList}
             slider
@@ -27,26 +27,26 @@ export const WatchList = ({ watchList, ratingList }: { watchList: MovieType[]; r
         ) : (
           <WatchListComponent
             movieList={watchList}
-            titleCategories={t('header:FromYourWatchList')}
+            titleCategories={t('common:FromYourWatchList')}
             watchList={watchList}
             ratingList={ratingList}
           />
         )
       ) : (
         <div className="mb-10">
-          <TitleCategories title="">{t('header:FromYourWatchList')}</TitleCategories>
+          <TitleCategories title="">{t('common:FromYourWatchList')}</TitleCategories>
           <div className=" p-6 text-center">
             <div className="flex flex-row justify-center">
               <SvgAdd width="30" height="36" />
             </div>
             <div className="my-6">
-              <p className="font-medium">{t('header:SignInYourWatchList')}</p>
-              <p>{t('header:SaveshowsAndWatch')}</p>
+              <p className="font-medium">{t('common:SignInYourWatchList')}</p>
+              <p>{t('common:SaveshowsAndWatch')}</p>
             </div>
             <div>
               <Link href="/login">
                 <button className="rounded-md bg-yellow-400 px-6 py-1 font-medium text-black hover:bg-yellow-500">
-                  {t('header:SignInToIMDb')}
+                  {t('common:SignInToIMDb')}
                 </button>
               </Link>
             </div>

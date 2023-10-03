@@ -93,12 +93,12 @@ const Header = () => {
           </div>
           <div className="sm:flexItemCenter hidden  cursor-pointer" onClick={() => setShowMenu(!showMenu)}>
             <FaBars className="mr-1 fill-white" />
-            <p className="whitespace-nowrap">{t('header:Menu')}</p>
+            <p className="whitespace-nowrap">{t('common:Menu')}</p>
             {showMenu && <Menu />}
           </div>
           <div className="flexItemCenter relative cursor-pointer sm:hidden" onClick={() => setShowMenu(!showMenu)}>
             <FaBars className="mr-1 fill-white" />
-            <p className="whitespace-nowrap">{t('header:Menu')}</p>
+            <p className="whitespace-nowrap">{t('common:Menu')}</p>
             {showMenu && <Sidebar onShow={() => setShowMenu(!showMenu)} />}
           </div>
           <div className="w-[80%] sm:w-[55%]">
@@ -139,7 +139,7 @@ const Header = () => {
                 className="relative flex items-center rounded-l-md  border-r-[1px] p-2 text-black hover:bg-white1"
                 onClick={() => setShowAll(!showAll)}
               >
-                <p className="mr-1 cursor-pointer whitespace-nowrap font-medium">{t(`header:${searchType}`)}</p>
+                <p className="mr-1 cursor-pointer whitespace-nowrap font-medium">{t(`common:${searchType}`)}</p>
                 <FaCaretDown />
                 {showAll && (
                   <All onChangeTypeSearch={(typeSearch: string) => setTypeSearch(typeSearch)} typeSearch={typeSearch} />
@@ -148,7 +148,7 @@ const Header = () => {
               <div className="flex w-full items-center" onClick={() => handleShow(true)}>
                 <input
                   type="text"
-                  placeholder={t(`header:${searchType}`)}
+                  placeholder={t(`common:${searchType}`)}
                   className="w-full px-2 text-black focus:outline-none"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -198,7 +198,7 @@ const Header = () => {
                 fill="currentColor"
               ></path>
             </svg>
-            <p className="ml-2 cursor-pointer whitespace-nowrap">{t(`header:WatchList`)}</p>
+            <p className="ml-2 cursor-pointer whitespace-nowrap">{t(`common:WatchList`)}</p>
           </div>
           <div className="hidden sm:block">
             {account.session_id ? (
@@ -207,7 +207,7 @@ const Header = () => {
                   className="flexItemCenter cursor-pointer whitespace-nowrap"
                   onClick={() => setShowProfile(!showProfile)}
                 >
-                  <span className="mr-1">{t(`header:HiYou`)}</span>
+                  <span className="mr-1">{t(`common:HiYou`)}</span>
                   <span>
                     <FaAngleDown />
                   </span>
@@ -215,17 +215,17 @@ const Header = () => {
                 {showProfile && (
                   <div className="absolute left-0 top-full z-20 min-w-[100px] bg-black1 shadow-lg">
                     <Link href={`/profile`}>
-                      <p className="cursor-pointer whitespace-nowrap p-3 hover:bg-gray2">{t('header:MyProfile')}</p>
+                      <p className="cursor-pointer whitespace-nowrap p-3 hover:bg-gray2">{t('common:MyProfile')}</p>
                     </Link>
                     <p className="cursor-pointer whitespace-nowrap p-3 hover:bg-gray2" onClick={() => handleLogout()}>
-                      {t(`header:Logout`)}
+                      {t(`common:Logout`)}
                     </p>
                   </div>
                 )}
               </div>
             ) : (
               <Link href="/login">
-                <p className="flexItemCenter cursor-pointer whitespace-nowrap">{t('header:SignIn')}</p>
+                <p className="flexItemCenter cursor-pointer whitespace-nowrap">{t('common:SignIn')}</p>
               </Link>
             )}
           </div>

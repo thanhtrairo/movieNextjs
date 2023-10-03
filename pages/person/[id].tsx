@@ -59,20 +59,20 @@ const PersonDetail = () => {
                 <div className="w-full sm:basis-8/12 sm:px-6">
                   <p className={clsx({ ['hiddenTextLine']: !showStory })}>{personDetail.biography}</p>
                   <button onClick={() => setShowStory(!showStory)} className="text-blue1">
-                    {t('header:MoreToWatch')}{' '}
+                    {t('common:MoreToWatch')}{' '}
                     {!showStory ? <FaAngleDown className="inline-block" /> : <FaAngleUp className="inline-block" />}
                   </button>
                   <p className="mt-4 flex gap-2">
-                    <span className="font-medium">{t('header:Born')}</span>
+                    <span className="font-medium">{t('common:Born')}</span>
                     <span className="text-blue1">{moment(personDetail.birthday).format('MMM Do YY')}</span>
-                    <span>{t('header:in')}</span>
+                    <span>{t('common:in')}</span>
                     <span className="text-blue1">{personDetail.place_of_birth}</span>
                   </p>
                 </div>
               </div>
             </div>
             <div className="mt-6 border-[1px] border-solid border-gray5 p-4 sm:px-0">
-              {personDetailMovie.cast.length > 0 && <p className="text-32 text-yellow1">{t('header:KnownFor')}</p>}
+              {personDetailMovie.cast.length > 0 && <p className="text-32 text-yellow1">{t('common:KnownFor')}</p>}
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-5 sm:gap-10">
                 {personDetailMovie.cast.map((movie: MovieType) => (
                   <LazyLoad key={movie.id} height={100} offset={[-100, 100]} placeholder={<Loading />}>
@@ -118,7 +118,7 @@ export default PersonDetail
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(String(locale), ['common', 'header'])),
+      ...(await serverSideTranslations(String(locale), ['common'])),
     },
   }
 }

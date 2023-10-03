@@ -93,7 +93,7 @@ const Carousel: React.FC<{ movieTrending: MovieType[] }> = ({ movieTrending }) =
           </Slider>
         </div>
         <div className="absolute right-[-1%] top-0 hidden sm:block sm:w-4/12">
-          <h2 className="text-yellow-400">{t(`header:UpNext`)}</h2>
+          <h2 className="text-yellow-400">{t(`common:UpNext`)}</h2>
           <div className="py-6">
             <div className="flex flex-col gap-3">
               {movieTrending.slice(1, 4).map((movie: MovieType) => (
@@ -124,7 +124,7 @@ const Carousel: React.FC<{ movieTrending: MovieType[] }> = ({ movieTrending }) =
             </div>
             <Link href="/" passHref>
               <a className="flex items-center space-x-2 pl-3 pt-4 text-20 font-medium hover:text-yellow-400">
-                <span>{t('header:BrowseTrailers')}</span> <FaAngleRight />
+                <span>{t('common:BrowseTrailers')}</span> <FaAngleRight />
               </a>
             </Link>
           </div>

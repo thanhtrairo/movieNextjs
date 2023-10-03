@@ -10,8 +10,8 @@ export const MoveToExplore: React.FC<{ personPopular: PersonType[] }> = ({ perso
   return (
     <>
       <Video
-        title={t('header:MoreToExplore')}
-        titleCategories={t('header:EditorPicks')}
+        title={t('common:MoreToExplore')}
+        titleCategories={t('common:EditorPicks')}
         titleMovie="list"
         list
         name
