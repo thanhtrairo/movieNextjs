@@ -101,9 +101,9 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
     return {
       // FIXME: should redirect to 500 page
       props: {
-        moviePopular: {},
-        movieTrending: {},
-        movieStreaming: {},
+        moviePopular: [],
+        movieTrending: [],
+        movieStreaming: [],
         personPopular: {},
       },
       redirect: '/',

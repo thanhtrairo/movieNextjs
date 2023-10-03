@@ -8,7 +8,7 @@ export default class MovieServices {
   }
 
   static async getTrendingMovies() {
-    return axiosInstance.get('/trending/all/weeks')
+    return axiosInstance.get('/trending/all/day')
   }
 
   static async getComingSoonMovies() {
