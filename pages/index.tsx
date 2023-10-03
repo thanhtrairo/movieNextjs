@@ -94,7 +94,7 @@ export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
         movieTrending: result[1].data.results,
         movieStreaming: result[2].data.results,
         personPopular: result[3].data.results,
-        ...(await serverSideTranslations(String(locale), ['header'])),
+        ...(await serverSideTranslations(String(locale), ['common', 'header'])),
       },
     }
   } catch (e) {
